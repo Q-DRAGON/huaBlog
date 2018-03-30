@@ -1,0 +1,89 @@
+.blog-detail-background {
+    background-image: url(../img/blog-head.jpg);
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    top: 0;
+    height: 30rem;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.blog-text,.blog-comments-container {
+    background-color: white;
+    width: 85%;
+    display: table;
+    margin: 20% auto 0;
+}
+
+.text-title {
+    font-size: 8rem;
+    padding: 2rem 1rem;
+    padding-bottom: 8rem;
+}
+
+.text-message {
+    border: 1px solid #bbbbbb;
+    margin-top: 4rem;
+    padding: 1.4rem;
+    font-size: 1.4rem;
+}
+
+.text-author::before {
+    content: 'By ';
+}
+
+.separator {
+    color: #bbbbbb;
+}
+
+.blog-comments-add h2 {
+    color: red;
+    font-size: 2.2rem;
+}
+
+.blog-comments-add input {
+    margin-bottom: 1rem;
+    transition: background-color 0.4s;
+}
+
+.blog-comments-add input:focus {
+    background-color: lightgrey;
+}
+
+.blog-comments-add textarea {
+    width: 99.5%;
+    height: 15rem;
+    resize: none;
+    overflow: auto;
+    transition: background-color 0.4s;
+}
+
+.blog-comments-add textarea:focus {
+    background-color: lightgrey;
+}
+
+.blog-comments-add .comment-add {
+    background-color: white;
+    border: 1px solid #f7f7f7;
+    color: #666666;
+    padding: 13px 15px;
+    cursor: pointer;
+    margin-top: 1.6rem;
+    transition: background-color 0.8s ease;
+    transition: color 0.8s ease;
+}
+
+.blog-comments-add .comment-add:hover {
+    background-color: red;
+    color: white;
+}
+
+.blog-comments h2 {
+    margin-top: 5rem;
+    color: red;
+    font-size: 2.2rem;
+}

@@ -1,0 +1,170 @@
+#hua-form,.blog-delete,.blog-update {
+    /*display: none;*/
+}
+
+#hua-form::after{
+    /*text-align: right;*/
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#content-preview {
+    height: 60rem;
+    background-color: rgb(247,247,247);
+    border: 1px solid #ccc;
+    overflow:auto;
+}
+
+.form-hide {
+    display: none;
+}
+
+.form-show {
+    display: block;
+    position: fixed;
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 100%;
+}
+
+.hua-send {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hua-blog-aside {
+    position: fixed;
+    float: left;
+    background-color: rgb(247,247,247);
+    font-size: 1rem;
+    height: 100%;
+    width: 20%;
+    animation: fadeInLeft linear 1s;
+    overflow: hidden;
+}
+
+.hua-blog-aside h1 {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hua-blog-aside #hua-tags .hua-tag {
+    padding: 4rem;
+    text-align: right;
+    cursor: pointer;
+}
+
+.blog-pages-container {
+    width: 80%;
+    float: right;
+}
+
+.tagBorderStyle {
+    border-right:4px solid red;
+}
+
+.hua-home {
+    background-image: url(../img/home.jpg);
+    height: 64rem;
+    background-size: cover;
+}
+
+/*=========
+  默认样式
+  =========*/
+
+html {
+    font-size: 62.5%;   /* 默认字体大小，rem 以此为基准 */
+    color:#222;         /* 默认字体颜色 */
+}
+
+/* 选中字体的默认效果 */
+::selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+ul {
+    margin:0;
+    pading:0;
+}
+
+li {
+    /*list-style: none; /* 去掉小圆点 */*/
+}
+
+/*=========
+  工具样式
+  =========*/
+
+  /* 在父元素中居中显示 */
+  .center-block {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  .pull-right {
+      float: right !important;
+  }
+
+  .pull-left {
+      float: left !important;
+  }
+
+  .text-right {
+      text-align: right !important;
+  }
+
+  .text-left {
+      text-align: left !important;
+  }
+
+  .text-center {
+      text-align: center !important;
+  }
+
+  .hide {
+      display: none !important;
+  }
+
+  .show {
+      display: block !important;
+  }
+
+  /* 隐藏但不占用空间 */
+  .invisible {
+      visibility: hidden;
+  }
+
+  .text-hide {
+      font:0/0 a;
+      color: transparent;
+      text-shadow: none;
+      background-color: transparent;
+      border: 0;
+  }
+
+  .clearfix::after,
+  .clearfix::before {
+          content: "";
+          display: table;
+  }
+
+  .clearfix::after {
+          clear: both;
+  }

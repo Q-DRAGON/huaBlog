@@ -1,0 +1,24 @@
+#markdown-toolbar {
+    background-color: rgb(33,36,51);
+    color: #FDFDFD;
+}
+
+
+#markdown-edit {
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(44,48,68);
+}
+
+#markdown-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #FDFDFD;
+    margin-left: 50%;
+    padding: 3%;
+    overflow: auto;
+}

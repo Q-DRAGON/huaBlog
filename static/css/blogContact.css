@@ -1,0 +1,95 @@
+.contect-title {
+    display: inline-block;
+    margin: 0 0 6rem 0;
+    padding: 0;
+}
+
+.hua-contact {
+    margin-left: 5.5rem;
+}
+
+.hua-contact h2 {
+    border-right: 10px solid red;
+    font-size: 5rem;
+    padding: 1rem 3rem 4rem 0rem;
+}
+
+.hua-contact h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 5rem 1rem 1rem 2rem;
+    vertical-align: bottom;
+}
+
+.blog-page-title {
+    display: inline-block;
+    margin: 0 0 8rem 0;
+    padding: 0;
+}
+
+.contect-subheading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.contact-left {
+    float:left;
+    height: 100%;
+    width: 40%;
+}
+
+.contact-right {
+    margin-left:40%;
+    height: 100%;
+}
+
+.hua-contact i {
+    font-size: 4rem;
+}
+
+.contact-detail {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.contact-method {
+    display: inline-block;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+.contact-wechat,.contact-github {
+    padding-bottom: 1rem;
+}
+
+.wechat-barcode {
+    background-image: url(../img/我的二维码.PNG);
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 310px;
+    bottom: 50px;
+    display: none;
+}
+
+.icon-weixin {
+    cursor: pointer;
+}
+
+.icon-weixin:hover .wechat-barcode{
+    display:block;
+    animation: zoomInLeft 1s linear;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: black!important;
+}
+
+a:visited {
+    color: black!important;
+}

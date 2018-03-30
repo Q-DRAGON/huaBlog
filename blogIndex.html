@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+        <link rel="stylesheet" href="//at.alicdn.com/t/font_570435_dxcwijje25z2rzfr.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/blogCell.css">
+        <link rel="stylesheet" href="css/blogContact.css">
+        <link rel="stylesheet" href="css/blogDetail.css">
+        <link rel="stylesheet" href="css/markdown.css">
+        <title>博客首页</title>
+    </head>
+    <body>
+        <aside class='hua-blog-aside'>
+            <h1>花的博客</h1>
+            <ul id='hua-tags' style="padding-left: 0px">
+                <li class='hua-home-tag hua-tag' data-id='hua-home'>首页</li>
+                <li class='hua-blogs-tag hua-tag' data-id='hua-blogs'>博客</li>
+                <li class='hua-contact-tag hua-tag' data-id='hua-contact'>联系我</li>
+            </ul>
+        </aside>
+        <button class='hua-send'>发表</button>
+        <div id='hua-form' class='form-hide'>
+            <div class='markdown-body'>
+                <div id='markdown-header'>
+                    <label>
+                        博文标题
+                        <input id='id-input-title' type="text" value="">
+                    </label>
+                    <label>
+                        博文作者
+                        <input id='id-input-author' type="text" value="">
+                    </label>
+                    <button id='id-button-submit' style='float:right'>发表新博文</button>
+                </div>
+                <div id='markdown-edit'></div>
+                <div id='markdown-content'></div>
+            </div>
+        </div>
+        <div class='blog-pages-container'></div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src='https://cdn.bootcss.com/marked/0.3.17/marked.min.js'></script>
+        <script src="js/ace/ace.js"></script>
+        <script src='js/blog.js'></script>
+        <script src='js/detail.js'></script>
+        <script src='js/markdown.js'></script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+.hua-blogs {
+    margin-left: 6rem;
+}
+
+.blog-pages-container .hua-blogs{
+    display: table;
+    margin: 0 auto;
+    width: 87%;
+}
+
+.hua-blog-cell {
+    display: block;
+    outline: solid 1px lightgrey;
+}
+
+.hua-blog-cell .cover{
+    background-image: url(../img/cover.jpg);
+    background-size: cover;
+    width:100%;
+    height:27rem;
+    background-repeat: no-repeat;
+
+}
+
+.hua-blogs .hua-blog-cell + .hua-blog-cell {
+    margin: 30px 0;
+}
+
+.hua-blog-cell h2 {
+    font-size: 2rem;
+    margin: 0.2rem;
+}
+
+.hua-blog-cell .hua-blog-message {
+    border-top: 1px solid lightgrey;
+    padding: 0.8rem;
+}
+
+.hua-blog-cell .hua-blog-message i{
+    font-size: 1.2rem;
+}
+
+.hua-blog-cell .hua-blog-message div{
+    display: inline-block;
+    float: right;
+}
+
+.hua-blogs h2[class='blog-page-title'] {
+    border-right: 10px solid red;
+    font-size: 5rem;
+    padding: 1rem 3rem 4rem 0rem;
+}
+
+.hua-blogs h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 5rem 1rem 1rem 2rem;
+    vertical-align: bottom;
+}
+
+.hua-blog-author:before {
+    content: "By ";
+}
+
+.blog-detail {
+    color: red;
+    letter-spacing: 0.01rem;
+    transition:letter-spacing 0.3s linear;
+    cursor: pointer;
+}
+
+.blog-detail:hover {
+    letter-spacing: 0.1rem;
+}
