@@ -71,9 +71,11 @@ var insertBlogAll = function(blogs) {
 
 // 请求 blog 文章目录
 var blogAll = function() {
+    const debug = process.env.NODE_ENV !== 'production'
+    var path = debug ? '/api/blog/all' : 'https://raw.githubusercontent.com/Q-DRAGON/huaBlog/master/db/blog.json'
     var request = {
         method: 'GET',
-        url: '/api/blog/all',
+        url: path,
         contentType: 'application/json',
         callback: function(response) {
             // 不考虑错误情况(断网/服务器返回错误等等)
